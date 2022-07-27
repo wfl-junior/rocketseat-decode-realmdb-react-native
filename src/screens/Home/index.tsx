@@ -1,10 +1,9 @@
-import React from 'react';
-import { useNavigation } from '@react-navigation/native';
-import { Container } from './styles';
-
-import { Header } from '../../components/Header';
-import { Orders } from '../../components/Orders';
-import { Button } from '../../components/Button';
+import { useNavigation } from "@react-navigation/native";
+import React from "react";
+import { Button } from "../../components/Button";
+import { Header } from "../../components/Header";
+import { Orders } from "../../components/Orders";
+import { Container } from "./styles";
 
 export function Home() {
   const navigation = useNavigation();
@@ -18,10 +17,7 @@ export function Home() {
       <Header />
       <Orders />
 
-      <Button
-        title="Novo chamado"
-        onPress={handleNewOrder}
-      />
+      <Button title="Novo chamado" onPress={handleNewOrder} />
     </Container>
   );
 }
