@@ -1,5 +1,8 @@
+import { SchemaTypes } from ".";
+
 export const OrderSchema = {
-  name: "Order",
+  name: SchemaTypes.Order,
+  primaryKey: "_id",
   properties: {
     _id: "string",
     patrimony: "string",
@@ -8,6 +11,4 @@ export const OrderSchema = {
     status: "string",
     created_at: "date",
   },
-
-  primaryKey: "_id",
 };
